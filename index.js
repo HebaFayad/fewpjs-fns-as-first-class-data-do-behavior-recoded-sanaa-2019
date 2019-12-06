@@ -12,25 +12,25 @@ console.log(andleClick(1))
 /* Write your implementation of displayMessage() */
 
 function greet(time) {
-  let splitting = time.split(":");
-  let parsing = parseInt(splitting);
+  let spl = time.split(":");
+  let pars = parseInt(spl);
+console.log(pars)
 
 
-
-  if (parsing < 12) {
+  if (pars < 12) {
     return "Good Morning";
   }
-  else if (parsing >= 12 && parsing <= 17) {  //17 is 5pm
+  else if (pars >= 12 && pars <= 17) { 
     return "Good Afternoon";
   }
-  else if (parsing >= 18 && parsing <= 24) {
+  else if (pars >= 18 && pars <= 24) {
     return "Good Evening";
   }
 
 }
 /* Write your implementation of displayMessage() */
-function displayMessage(res) {
-  document.querySelector("#greeting").innerText = res;
+function displayMessage(e) {
+  document.querySelector("#greeting").innerText = e;
 
 
 }
